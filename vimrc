@@ -160,6 +160,11 @@ map <leader><space> :nohl<CR>
 " Just to avoid the shift in the :
 nore ; :
 
+" Map tp regenerate tags on the fly. Python specific
+nnoremap <F8> :!/opt/local/bin/ctags -R --python-kinds=-i *.py<CR>
+" Toggle Tlist
+nnoremap <F4> :TlistToggle<CR>
+
 " ==================================================================================
 " Auto Commands
 " ==================================================================================

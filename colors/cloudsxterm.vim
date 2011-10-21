@@ -24,6 +24,7 @@ hi IncSearch  guifg=NONE guibg=#e5dccf gui=NONE ctermbg=253 cterm=NONE ctermfg=N
 hi Search  guifg=NONE guibg=#e5dccf gui=NONE ctermbg=253 cterm=NONE ctermfg=NONE
 hi Directory  guifg=NONE guibg=NONE gui=NONE ctermbg=NONE cterm=NONE ctermfg=NONE
 hi Folded  guifg=#bcc8ba guibg=#ffffff gui=NONE ctermbg=231 cterm=NONE ctermfg=250
+hi FoldColumn guifg=#bcc8ba guibg=#ffffff gui=NONE ctermbg=231 cterm=NONE ctermfg=250
 
 hi Normal  guifg=#555555 guibg=#ffffff gui=NONE ctermbg=231 cterm=NONE ctermfg=237
 hi Boolean  guifg=#39946a guibg=NONE gui=NONE ctermbg=NONE cterm=NONE ctermfg=65

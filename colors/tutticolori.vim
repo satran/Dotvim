@@ -24,7 +24,7 @@ highlight SpecialKey                guifg=#fafafa   guibg=NONE
 highlight MatchParen                              guibg=#d4e9fa
 
 highlight LineNr                    guifg=#aabbcc guibg=NONE 
-highlight FoldColumn                guifg=#aabbcc guibg=#f2f8ff 
+highlight FoldColumn                guifg=#aabbcc guibg=NONE
 highlight Folded                    guifg=#667788 guibg=#f2f8ff
 
 highlight StatusLine                guifg=#888888 guibg=#ffffff
