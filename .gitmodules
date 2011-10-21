@@ -40,3 +40,6 @@
 [submodule "pyflakes-pathogen"]
 	path = pyflakes-pathogen
 	url = https://github.com/mitechie/pyflakes-pathogen.git
+[submodule "bundle/tcomment_vim"]
+	path = bundle/tcomment_vim
+	url = https://github.com/tomtom/tcomment_vim.git
