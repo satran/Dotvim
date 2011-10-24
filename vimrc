@@ -79,7 +79,7 @@ endif
 " Mappings
 " ==================================================================================
 
-let mapleader = ","
+" let mapleader = ","
 
 " Hide .pyc in File browser and NERDTree
 let g:explHideFiles='^\.,.*.pyc$'
@@ -173,7 +173,4 @@ nnoremap <F4> :TlistToggle<CR>
 autocmd bufwritepost .vimrc source ~/.vimrc
 
 " MiniBuf Explorer settings
-" Vertical on on MacVim as I generally use it in full screen
-if has("gui_running")
-    let g:miniBufExplVSplit = 20
-endif
+let g:miniBufExpSortBy = "name"
