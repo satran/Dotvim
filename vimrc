@@ -25,7 +25,7 @@ set lbr
 " Folding using indents
 "set foldenable	
 "set foldmethod=indent
-"set foldcolumn=2
+" set foldcolumn=2
 
 set noerrorbells " don't make noise
 set ofu=syntaxcomplete

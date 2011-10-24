@@ -57,7 +57,9 @@ hi treePart                         guifg=#afafaf guibg=NONE
 hi treeOpenable                     guifg=#afafaf guibg=NONE
 hi treePartFile                     guifg=#afafaf guibg=NONE
 hi netrwDir                     guifg=#d44950 guibg=NONE
-hi NERDTreeDir                     guifg=#d44950 guibg=NONE
+hi NERDTreeUp                     guifg=#d44950 guibg=NONE
+hi NERDTreeDir                     guifg=#2f6f9f guibg=NONE
+highlight NERDTreeOpenable                guifg=#aabbcc guibg=NONE
 
 " Column 
 highlight ColorColumn ctermbg=lightgrey guibg=#efefef
