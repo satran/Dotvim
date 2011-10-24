@@ -172,4 +172,8 @@ nnoremap <F4> :TlistToggle<CR>
 " Source the vimrc file after saving it
 autocmd bufwritepost .vimrc source ~/.vimrc
 
-
+" MiniBuf Explorer settings
+" Vertical on on MacVim as I generally use it in full screen
+if has("gui_running")
+    let g:miniBufExplVSplit = 20
+endif
