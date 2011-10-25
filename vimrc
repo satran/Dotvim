@@ -87,7 +87,7 @@ let NERDTreeIgnore=['\.pyc$', '\~$', 'PYSMELLTAG']
 
 "Setting for the File Browser
 let g:netrw_liststyle         = 3
-let g:netrw_list_hide         = '.*\.pyc,.DS_Store'
+let g:netrw_list_hide         = '.*\.pyc,.DS_Store,.git,.ropeproject'
 
 " Changes % to tab for matching brackets
 nnoremap <tab> %
@@ -173,4 +173,4 @@ nnoremap <F4> :TlistToggle<CR>
 autocmd bufwritepost .vimrc source ~/.vimrc
 
 " MiniBuf Explorer settings
-let g:miniBufExpSortBy = "name"
+let g:miniBufExplSortBy = "name"
