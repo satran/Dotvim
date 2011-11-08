@@ -23,7 +23,7 @@ highlight NonText                   guifg=#fafafa   guibg=NONE
 highlight SpecialKey                guifg=#fafafa   guibg=NONE 
 highlight MatchParen                              guibg=#d4e9fa
 
-highlight LineNr                    guifg=#aabbcc guibg=NONE 
+highlight LineNr                    guifg=#777777 guibg=NONE 
 highlight FoldColumn                guifg=#aabbcc guibg=NONE
 highlight Folded                    guifg=#667788 guibg=#f2f8ff
 

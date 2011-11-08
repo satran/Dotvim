@@ -68,7 +68,7 @@ if has("gui_running")
     set guioptions-=r 
     set guioptions-=L 
     set guioptions+=a
-    set gfn=Meslo\ LG\ M:h12
+    set gfn=Meslo\ LG\ L:h12
     colo tutticolori
     set listchars=tab:▸\ ,eol:¬         " Invisibles using the Textmate style
 endif
@@ -79,7 +79,7 @@ endif
 " Mappings
 " ==================================================================================
 
-" let mapleader = ","
+let mapleader = ","
 
 " Hide .pyc in File browser and NERDTree
 let g:explHideFiles='^\.,.*.pyc$'
@@ -93,7 +93,7 @@ let g:netrw_list_hide         = '.*\.pyc,.DS_Store,.git,.ropeproject'
 nnoremap <tab> %
 vnoremap <tab> %
 
-map <C-s> :NERDTreeToggle<CR>   " Map for NERDtree toggle
+map <C-n> :NERDTreeToggle<CR>   " Map for NERDtree toggle
 
 " Takes you to the next line. Similar to Command-Enter in Textmate. The
 " Command-Shift-Enter is used while creating classes and functions. 
