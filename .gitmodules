@@ -46,3 +46,6 @@
 [submodule "bundle/minibufexpl.vim"]
 	path = bundle/minibufexpl.vim
 	url = https://github.com/fholgado/minibufexpl.vim.git
+[submodule "bundle/lusty"]
+	path = bundle/lusty
+	url = https://github.com/sjbach/lusty.git

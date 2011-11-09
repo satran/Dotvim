@@ -14,7 +14,7 @@ hi CursorLine  guifg=NONE guibg=#cccccc gui=NONE ctermbg=230 cterm=NONE ctermfg=
 " hi CursorLine  guifg=NONE guibg=#fffbdd gui=NONE ctermbg=230 cterm=NONE ctermfg=NONE
 hi CursorColumn  guifg=NONE guibg=NONE gui=NONE ctermbg=NONE cterm=NONE ctermfg=NONE
 hi LineNr  guifg=#9c9c9c guibg=#ffffff gui=NONE ctermbg=231 cterm=NONE ctermfg=244
-hi VertSplit  guifg=#afafaf guibg=NONE gui=NONE ctermbg=NONE cterm=NONE ctermfg=145
+hi VertSplit  guifg=#afafaf guibg=NONE gui=NONE ctermbg=252 cterm=NONE ctermfg=252
 hi MatchParen  guifg=#af956f guibg=NONE gui=NONE ctermbg=NONE cterm=NONE ctermfg=137
 hi StatusLine  guifg=#000000 guibg=#cfcfcf gui=bold ctermbg=252 cterm=bold ctermfg=16
 hi StatusLineNC  guifg=#000000 guibg=#cfcfcf gui=NONE ctermbg=252 cterm=NONE ctermfg=16
