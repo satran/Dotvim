@@ -14,7 +14,7 @@ syntax on
 filetype on
 filetype plugin indent on
 set pastetoggle=<F3>			"turn off auto-indent when pasting text
-colo cloudsxterm    " Set color for Vim, GUI has a seperate option
+colo rdark-terminal    " Set color for Vim, GUI has a seperate option
 set nolist  		" Disable list chars
 set showcmd
 set mouse=a    " Set use of mouse when using the terminal
@@ -69,7 +69,7 @@ if has("gui_running")
     set guioptions-=L 
     set guioptions+=a
     set gfn=Meslo\ LG\ L:h12
-    colo tutticolori
+    colo rdark
     set listchars=tab:▸\ ,eol:¬         " Invisibles using the Textmate style
 endif
 
@@ -128,11 +128,9 @@ map <Leader>p :!open -a "Google Chrome" %<CR><CR>
 " Open current folder in terminal/iterm
 map <Leader><F10> :!open -a /Applications/iTerm.app '.' <CR><CR>
 
-" Maps for next/previous buffer/tab
-nmap <leader>nn <Esc>:tabn<CR>
-nmap <leader>pp <Esc>:tabp<CR>
-nmap <leader>bn <Esc>:bn<CR>
-nmap <leader>bp <Esc>:bp<CR>
+" Maps for next/previous buffer
+nmap <leader>nn <Esc>:bn<CR>
+nmap <leader>np <Esc>:bp<CR>
 
 " Gundo plugin
 nnoremap <leader>g :GundoToggle<CR>
