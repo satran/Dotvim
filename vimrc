@@ -64,12 +64,13 @@ set incsearch
 " GUI Settings
 " ==================================================================================
 if has("gui_running")
+    set guitablabel=%-0.12t%M
     set guioptions-=T
     set guioptions-=r 
     set guioptions-=L 
     set guioptions+=a
     set gfn=Meslo\ LG\ L:h12
-    colo rdark
+    colo tutticolori
     set listchars=tab:▸\ ,eol:¬         " Invisibles using the Textmate style
 endif
 
@@ -144,6 +145,10 @@ map <leader>j :RopeGotoDefinition<CR>
 
 " Command-t 
 map <leader>t :CommandT<CR>
+noremap <D-t> :CommandT<CR>
+
+" Command-/
+map <D-/> <Esc>gcc<CR>
 
 " Pep 8 styling
 let g:pep8_map='<leader>8'
@@ -163,6 +168,12 @@ nnoremap <F8> :!/opt/local/bin/ctags -R --python-kinds=-i *.py<CR>
 " Toggle Tlist
 nnoremap <F4> :TlistToggle<CR>
 
+" Map right command key to Esc
+imap ;; <Esc>
+
+" MiniBuf Explorer settings
+let g:miniBufExplSortBy = "name"
+
 " ==================================================================================
 " Auto Commands
 " ==================================================================================
@@ -170,5 +181,4 @@ nnoremap <F4> :TlistToggle<CR>
 " Source the vimrc file after saving it
 autocmd bufwritepost .vimrc source ~/.vimrc
 
-" MiniBuf Explorer settings
-let g:miniBufExplSortBy = "name"
+
