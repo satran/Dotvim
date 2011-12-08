@@ -30,8 +30,10 @@ hi CursorLine ctermbg=235
 hi Normal term=NONE cterm=NONE ctermbg=NONE ctermfg=252
 hi Underlined term=underline cterm=underline ctermbg=NONE ctermfg=111
 hi Ignore term=NONE cterm=NONE ctermbg=NONE ctermfg=16
-hi Error term=reverse cterm=NONE ctermbg=160 ctermfg=255
-hi Todo term=NONE cterm=NONE ctermbg=16 ctermfg=215
+" hi Error term=reverse cterm=NONE ctermbg=160 ctermfg=255
+hi Error term=reverse cterm=NONE ctermbg=NONE ctermfg=255
+" hi Todo term=NONE cterm=NONE ctermbg=16 ctermfg=215
+hi Todo term=NONE cterm=NONE ctermbg=NONE ctermfg=215
 hi Number term=NONE cterm=NONE ctermbg=NONE ctermfg=113
 hi String term=NONE cterm=NONE ctermbg=NONE ctermfg=113
 hi Function term=NONE cterm=NONE ctermbg=NONE ctermfg=215
@@ -61,7 +63,8 @@ hi StatusLineNC term=reverse cterm=NONE ctermbg=240 ctermfg=16
 "hi VertSplit term=reverse cterm=NONE ctermbg=102 ctermfg=59
 hi VertSplit term=reverse cterm=NONE ctermbg=NONE ctermfg=59
 hi Directory term=bold cterm=NONE ctermbg=NONE ctermfg=231
-hi ErrorMsg term=NONE cterm=NONE ctermbg=196 ctermfg=231
+" hi ErrorMsg term=NONE cterm=NONE ctermbg=196 ctermfg=231
+hi ErrorMsg term=NONE cterm=NONE ctermbg=NONE ctermfg=231
 hi IncSearch term=reverse cterm=NONE ctermbg=215 ctermfg=23
 hi Search term=reverse cterm=NONE ctermbg=215 ctermfg=23
 hi MoreMsg term=bold cterm=bold ctermbg=NONE ctermfg=74
