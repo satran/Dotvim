@@ -9,13 +9,11 @@ git submodule add https://github.com/sjl/gundo.vim.git bundle/gundo.vim
 git submodule add https://github.com/fs111/pydoc.vim.git bundle/pydoc.vim
 git submodule add https://github.com/vim-scripts/pep8.git bundle/pep8
 git submodule add https://github.com/scrooloose/nerdtree.git bundle/nerdtree
-git submodule add https://github.com/sontek/rope-vim.git bundle/rope-vim
 git submodule add https://github.com/vim-scripts/simple-pairs.git bundle/simple-pairs
 git submodule add https://github.com/tomtom/tcomment_vim.git bundle/tcomment_vim
 git submodule add https://github.com/vim-scripts/taglist.vim.git bundle/taglist.vim
 git submodule add https://github.com/fholgado/minibufexpl.vim.git bundle/minibufexpl.vim
-git submodule add https://github.com/sjbach/lusty.git bundle/lusty
-git submodule add https://github.com/vim-scripts/Conque-Shell.git bundle/Conque-Shell
+git submodule add https://github.com/klen/python-mode.git bundle/python-mode
 git submodule init
 git submodule update
 git submodule foreach git submodule init

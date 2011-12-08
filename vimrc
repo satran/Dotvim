@@ -23,7 +23,7 @@ set formatoptions+=l
 set lbr
 
 " Folding using indents
-"set foldenable	
+"set foldenable
 "set foldmethod=indent
 " set foldcolumn=2
 
@@ -66,11 +66,12 @@ set incsearch
 if has("gui_running")
     set guitablabel=%-0.12t%M
     set guioptions-=T
-    set guioptions-=r 
-    set guioptions-=L 
+    set guioptions-=r
+    set guioptions-=L
     set guioptions+=a
     set gfn=Meslo\ LG\ L:h12
     colo tutticolori
+    " colo rdark
     set listchars=tab:▸\ ,eol:¬         " Invisibles using the Textmate style
 endif
 
@@ -97,7 +98,7 @@ vnoremap <tab> %
 map <C-n> :NERDTreeToggle<CR>   " Map for NERDtree toggle
 
 " Takes you to the next line. Similar to Command-Enter in Textmate. The
-" Command-Shift-Enter is used while creating classes and functions. 
+" Command-Shift-Enter is used while creating classes and functions.
 imap <D-Enter> <Esc>o
 imap <D-S-Enter> <Esc>A:<CR>
 
@@ -126,6 +127,9 @@ map <SwipeDown> :bn<CR>
 " map <Leader>p :!open -a Safari %<CR><CR>
 map <Leader>p :!open -a "Google Chrome" %<CR><CR>
 
+" Open markdown with Mou
+map <Leader>md :!open -a Mou %<CR><CR>
+
 " Open current folder in terminal/iterm
 map <Leader><F10> :!open -a /Applications/iTerm.app '.' <CR><CR>
 
@@ -143,7 +147,7 @@ nmap <leader>l :set list<CR>
 " Jump to the definition of whatever the cursor is on
 map <leader>j :RopeGotoDefinition<CR>
 
-" Command-t 
+" Command-t
 map <leader>t :CommandT<CR>
 noremap <D-t> :CommandT<CR>
 
@@ -160,19 +164,27 @@ map <leader><space> :nohl<CR>
 " map <D-8> :set colorcolumn=80<CR>
 " map <D-0> :set colorcolumn=80<CR>
 
-" Just to avoid the shift in the :
-nore ; :
-
 " Map tp regenerate tags on the fly. Python specific
 nnoremap <F8> :!/opt/local/bin/ctags -R --python-kinds=-i *.py<CR>
 " Toggle Tlist
 nnoremap <F4> :TlistToggle<CR>
 
+nnoremap <D-w> <Esc>:bd<CR>
+
 " Map right command key to Esc
 imap ;; <Esc>
 
+" Clear end spaces
+map <leader>c <Esc>:%s/\s\+$//g<CR>
+
+" Just to avoid the shift in the :
+" nore ; :
+
 " MiniBuf Explorer settings
 let g:miniBufExplSortBy = "name"
+
+"Rope settings
+map <C-g> <Esc>:RopeGotoDefinition<CR>
 
 " ==================================================================================
 " Auto Commands
@@ -182,3 +194,11 @@ let g:miniBufExplSortBy = "name"
 autocmd bufwritepost .vimrc source ~/.vimrc
 
 
+" Python mode settings
+" let g:pymode_syntax_builtin_objs = 0
+" let g:pymode_syntax_builtin_funcs = 0
+" let g:pymode_lint_cwindow = 0
+" let g:pymode_lint_signs = 0
+let g:pymode_lint_jump = 0
+let g:pymode_syntax = 1
+let g:pymode_syntax_space_errors = 0 
