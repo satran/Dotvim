@@ -9,23 +9,24 @@ My .vimrc file is constantly being updated. Hope I remember to commit the change
 
 ###Mappings for various commands
 
-The leader is set to , 
-| Mapping           |  Description                                   | 
-|:------------------|:-----------------------------------------------|
-| CTRL+n            |  toggles NERDTree Explorer                     |
-| <leader>p         |  opens Google Chrome in Mac                    |
-| <leader>md        |  opens Mou in Mac                              |
-| CDM+i             |  opens iTerm                                   |
-| <leader>nn        |  next buffer                                   |
-| <leader>nb        |  previous buffer                               |
-| <leader>g         |  Toggles Gundo                                 |
-| <leader>j         |  Jump to definition using Rope                 |
-| CTRL+j            |  Jump to definition using Rope                 |
-| F4                |  Tlist toggle                                  |
-| <leader>t         |  toggles CommandT plugin                       |
-| CMD+t             |  toggles CommandT plugin                       |
-| CMD+/             |  comments line                                 |
-| ;;                |  Esc                                           |
-| <leader>x         |  closes current window                         |
-| CTRL+d            |  inserts python pdb.set_trace() in the code    |
+The leader is set to ,   
+
+| Mapping           |  Description                                   |  
+|:------------------|:-----------------------------------------------|  
+| CTRL+n            |  toggles NERDTree Explorer                     |  
+| <leader>p         |  opens Google Chrome in Mac                    |  
+| <leader>md        |  opens Mou in Mac                              |  
+| CDM+i             |  opens iTerm                                   |  
+| <leader>nn        |  next buffer                                   |  
+| <leader>nb        |  previous buffer                               |  
+| <leader>g         |  Toggles Gundo                                 |  
+| <leader>j         |  Jump to definition using Rope                 |  
+| CTRL+j            |  Jump to definition using Rope                 |  
+| F4                |  Tlist toggle                                  |  
+| <leader>t         |  toggles CommandT plugin                       |  
+| CMD+t             |  toggles CommandT plugin                       |   
+| CMD+/             |  comments line                                 |  
+| ;;                |  Esc                                           |  
+| <leader>x         |  closes current window                         |  
+| CTRL+d            |  inserts python pdb.set_trace() in the code    |  
 
