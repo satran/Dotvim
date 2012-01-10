@@ -30,3 +30,4 @@ The leader is set to ,
 | <leader>x         |  closes current window                         |  
 | CTRL+d            |  inserts python pdb.set_trace() in the code    |  
 
+*For some reason GitHub does not recognize tables using markdown. So if you can't read this just open the md in vim.*
