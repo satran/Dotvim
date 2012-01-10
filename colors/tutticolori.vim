@@ -14,7 +14,8 @@ let g:colors_name = "tutticolori"
 
 highlight Normal                    guifg=#555555 guibg=#ffffff
 highlight Cursor                    guifg=#000000 guibg=#cccecf
-hi CursorLine                       guifg=NONE guibg=#cccccc gui=NONE 
+" hi CursorLine                       guifg=#333333 guibg=NONE gui=NONE 
+hi CursorLine                       guifg=NONE guibg=#efefef gui=NONE 
 hi CursorColumn                     guifg=NONE guibg=NONE gui=NONE 
 highlight Visual                                  guibg=#dbebff
 highlight Search                                  guibg=#fbe9ad

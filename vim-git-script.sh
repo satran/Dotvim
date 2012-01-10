@@ -1,4 +1,3 @@
-git init
 git submodule add https://github.com/tpope/vim-pathogen.git bundle/vim-pathogen
 git submodule add https://github.com/tpope/vim-fugitive.git bundle/vim-fugitive
 git submodule add https://github.com/tpope/vim-git.git bundle/vim-git

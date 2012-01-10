@@ -77,12 +77,6 @@ endif
 
 
 
-" ==================================================================================
-" Mappings
-" ==================================================================================
-
-let mapleader = ","
-
 " Hide .pyc in File browser and NERDTree
 let g:explHideFiles='^\.,.*.pyc$'
 let NERDTreeIgnore=['\.pyc$', '\~$', 'PYSMELLTAG']
@@ -90,12 +84,25 @@ let NERDTreeIgnore=['\.pyc$', '\~$', 'PYSMELLTAG']
 "Setting for the File Browser
 let g:netrw_liststyle         = 3
 let g:netrw_list_hide         = '.*\.pyc,.DS_Store,.git,.ropeproject'
+"
+" MiniBuf Explorer settings
+let g:miniBufExplSortBy = "name"
+
+" Pep 8 styling
+let g:pep8_map='<leader>8'
+
+" ==================================================================================
+" Mappings
+" ==================================================================================
+
+let mapleader = ","
 
 " Changes % to tab for matching brackets
 nnoremap <tab> %
 vnoremap <tab> %
 
-map <C-n> :NERDTreeToggle<CR>   " Map for NERDtree toggle
+" Map for NERDtree toggle
+map <C-n> :NERDTreeToggle<CR>   
 
 " Takes you to the next line. Similar to Command-Enter in Textmate. The
 " Command-Shift-Enter is used while creating classes and functions.
@@ -130,12 +137,12 @@ map <Leader>p :!open -a "Google Chrome" %<CR><CR>
 " Open markdown with Mou
 map <Leader>md :!open -a Mou %<CR><CR>
 
-" Open current folder in terminal/iterm
-map <Leader><F10> :!open -a /Applications/iTerm.app '.' <CR><CR>
+" Open current folder in terminal/iterm only for Mac.
+map <D-i> :!open -a /Applications/iTerm.app '.' <CR><CR>
 
 " Maps for next/previous buffer
 nmap <leader>nn <Esc>:bn<CR>
-nmap <leader>np <Esc>:bp<CR>
+nmap <leader>nb <Esc>:bp<CR>
 
 " Gundo plugin
 nnoremap <leader>g :GundoToggle<CR>
@@ -144,18 +151,16 @@ nnoremap <leader>g :GundoToggle<CR>
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list<CR>
 
+"Rope settings
 " Jump to the definition of whatever the cursor is on
 map <leader>j :RopeGotoDefinition<CR>
+map <C-g> <Esc>:RopeGotoDefinition<CR>
 
 " Command-t
 map <leader>t :CommandT<CR>
-noremap <D-t> :CommandT<CR>
 
 " Command-/
 map <D-/> <Esc>gcc<CR>
-
-" Pep 8 styling
-let g:pep8_map='<leader>8'
 
 " Disable search highlight
 map <leader><space> :nohl<CR>
@@ -177,15 +182,14 @@ imap ;; <Esc>
 " Clear end spaces
 map <leader>c <Esc>:%s/\s\+$//g<CR>
 
+" Map to close window
+map <leader>x <Esc>:clos<CR>
+
 " Just to avoid the shift in the :
 " nore ; :
 
-" MiniBuf Explorer settings
-let g:miniBufExplSortBy = "name"
-
-"Rope settings
-map <C-g> <Esc>:RopeGotoDefinition<CR>
-
+" Map to insert python debugger
+map <C-d> <Esc>o# DEBUGGER!<CR>import pdb; pdb.set_trace()<Esc>
 " ==================================================================================
 " Auto Commands
 " ==================================================================================
@@ -198,7 +202,8 @@ autocmd bufwritepost .vimrc source ~/.vimrc
 " let g:pymode_syntax_builtin_objs = 0
 " let g:pymode_syntax_builtin_funcs = 0
 " let g:pymode_lint_cwindow = 0
-" let g:pymode_lint_signs = 0
+let g:pymode_lint_signs = 0
 let g:pymode_lint_jump = 0
 let g:pymode_syntax = 1
 let g:pymode_syntax_space_errors = 0 
+let g:pymode_breakpoint_key = 0
