@@ -2,10 +2,32 @@ These are my Vim configuration files and plugins. This is a very python oriented
 
 Most of the plugins are done using Pathogen(including itself). The non pathogen plugins are found in the plugin directory. Currently these are the plugins in the plugin directory:
 
+My .vimrc file is constantly being updated. Hope I remember to commit the changes. I have tried to comment where ever necessary. There is a much modified version of the colour scheme clouds. I have called it cloudsxterm. It works on terminal and gui.
+
 *colorx.vim - this is used to launch the colorpicker in Mac*  
 *hexHighlight.vim - this is used to display the actual color of a hex.*  
 
-My .vimrc file is constantly being updated. Hope I remember to commit the changes. I have tried to comment where ever necessary. There is a much modified version of the colour scheme clouds. I have called it cloudsxterm. It works on terminal and gui.
+##Installation
+####Clone the repository
+The best way would be to clone the entire repoistory to your home directory's .vim folder. If the .vim directory exists move it.
+
+    mv ~/.vim ~/.vim-backup
+    cd ~
+    git clone git@github.com:satyajitranjeev/Dotvim.git .vim
+
+####Symbolic link for .vimrc
+Make a symbolic link of the .vim/vimrc file to the home directory.
+
+    ln -s ~/.vim/vimrc ~/.vimrc
+
+####Clone sub-modules
+Clone all the sub-modules:
+
+    cd ~/.vim
+    bash vim-git-script.sh
+
+
+
 
 ###Mappings for various commands
 
@@ -30,4 +52,5 @@ The leader is set to ,
 | <leader>x         |  closes current window                         |  
 | CTRL+d            |  inserts python pdb.set_trace() in the code    |  
 
-*For some reason GitHub does not recognize tables using markdown. So if you can't read this just open the md in vim.*
+*
+:For some reason GitHub does not recognize tables using markdown. So if you can't read this just open the md in vim.*
