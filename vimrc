@@ -75,6 +75,9 @@ if has("gui_running")
     set listchars=tab:▸\ ,eol:¬         " Invisibles using the Textmate style
 endif
 
+" Status Line mode
+set laststatus=2
+
 
 
 " Hide .pyc in File browser and NERDTree
