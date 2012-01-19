@@ -21,6 +21,7 @@ set mouse=a    " Set use of mouse when using the terminal
 set wrap    " Wrapping without line break and in words instead of letters
 set formatoptions+=l
 set lbr
+set encoding=utf-8
 
 " Folding using indents
 "set foldenable
