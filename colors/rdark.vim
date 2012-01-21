@@ -26,7 +26,8 @@ if exists('rdark_current_line') && rdark_current_line == 1
 	hi CursorLine guibg=#323232
 endif
 
-hi CursorLine guibg=#323232
+set cursorline
+hi CursorLine guibg=#000000
 " Default Colors
 hi Normal guifg=#efefef guibg=#202020
 "hi NonText guifg=#999999 guibg=NONE gui=none
