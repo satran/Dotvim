@@ -10,6 +10,9 @@ if exists("syntax_on")
     syntax reset
 endif
 
+set cursorline
+hi CursorLine guibg=#cccccc
+
 let g:colors_name = "tutticolori"
 
 highlight Normal                    guifg=#555555 guibg=#ffffff
@@ -29,7 +32,7 @@ highlight FoldColumn                guifg=#aabbcc guibg=NONE
 highlight Folded                    guifg=#667788 guibg=#f2f8ff
 
 highlight StatusLine                guifg=#888888 guibg=#ffffff
-highlight StatusLineNC              guifg=#bbbbbb guibg=#ffffff
+highlight StatusLineNC              guifg=#666666 guibg=#ffffff
 hi VertSplit                        guifg=#afafaf guibg=NONE gui=NONE 
 
 highlight Comment                   guifg=#999999 guibg=#eeeeee gui=italic

@@ -12,9 +12,9 @@ git submodule add https://github.com/vim-scripts/simple-pairs.git bundle/simple-
 git submodule add https://github.com/tomtom/tcomment_vim.git bundle/tcomment_vim
 git submodule add https://github.com/vim-scripts/taglist.vim.git bundle/taglist.vim
 git submodule add https://github.com/fholgado/minibufexpl.vim.git bundle/minibufexpl.vim
-git submodule add https://github.com/klen/python-mode.git bundle/python-mode
 git submodule add https://github.com/Lokaltog/vim-powerline.git bundle/vim-powerline
 git submodule add https://github.com/plasticboy/vim-markdown.git bundle/vim-markdown
+git submodule add https://github.com/klen/rope-vim.git bundle/rope-vim
 git submodule init
 git submodule update
 git submodule foreach git submodule init

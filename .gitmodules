@@ -37,12 +37,12 @@
 [submodule "bundle/minibufexpl.vim"]
 	path = bundle/minibufexpl.vim
 	url = https://github.com/fholgado/minibufexpl.vim.git
-[submodule "bundle/python-mode"]
-	path = bundle/python-mode
-	url = https://github.com/klen/python-mode.git
 [submodule "bundle/vim-powerline"]
 	path = bundle/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline.git
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
+[submodule "bundle/rope-vim"]
+	path = bundle/rope-vim
+	url = https://github.com/klen/rope-vim.git

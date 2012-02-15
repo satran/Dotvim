@@ -71,6 +71,7 @@ if has("gui_running")
     set guioptions-=L
     set guioptions+=a
     set gfn=Meslo\ LG\ L:h12
+    " set gfn=Espresso\ Mono\ Regular:h13
     colo tutticolori
     " colo rdark
     set listchars=tab:▸\ ,eol:¬         " Invisibles using the Textmate style
@@ -100,6 +101,7 @@ let g:pep8_map='<leader>8'
 " ==================================================================================
 
 let mapleader = ","
+
 
 " Changes % to tab for matching brackets
 nnoremap <tab> %
@@ -143,6 +145,7 @@ map <Leader>md :!open -a Mou %<CR><CR>
 
 " Open current folder in terminal/iterm only for Mac.
 map <D-i> :!open -a /Applications/iTerm.app '.' <CR><CR>
+map <c-i> :!open -a /Applications/iTerm.app '.' <CR><CR>
 
 " Maps for next/previous buffer
 nmap <leader>nn <Esc>:bn<CR>
@@ -194,6 +197,10 @@ map <leader>x <Esc>:clos<CR>
 
 " Map to insert python debugger
 map <C-d> <Esc>o# DEBUGGER!<CR>import pdb; pdb.set_trace()<Esc>
+
+" Map to close the python error screen
+map <C-q> <Esc><C>wj:clos<CR>
+
 " ==================================================================================
 " Auto Commands
 " ==================================================================================
@@ -211,3 +218,9 @@ let g:pymode_lint_jump = 0
 let g:pymode_syntax = 1
 let g:pymode_syntax_space_errors = 0 
 let g:pymode_breakpoint_key = 0
+
+" Disabling the arrow keys.
+nnoremap <up> <nop>                                                            
+nnoremap <down> <nop>                                                          
+nnoremap <left> <nop>                                                          
+nnoremap <right> <nop>                                                         
