@@ -21,6 +21,10 @@ The best way would be to clone the entire repoistory to your home directory's .v
     cd ~
     git clone git@github.com:satyajitranjeev/Dotvim.git .vim
 
+    # OR if you don't have not registered with git
+
+    git clone https://satyajitranjeev@github.com/satyajitranjeev/Dotvim.git
+
 ####Symbolic link for .vimrc
 Make a symbolic link of the .vim/vimrc file to the home directory.
 
