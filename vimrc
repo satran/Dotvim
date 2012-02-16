@@ -220,7 +220,7 @@ let g:pymode_syntax_space_errors = 0
 let g:pymode_breakpoint_key = 0
 
 " Disabling the arrow keys.
-nnoremap <up> <nop>                                                            
-nnoremap <down> <nop>                                                          
-nnoremap <left> <nop>                                                          
-nnoremap <right> <nop>                                                         
+" nnoremap <up> <nop>                                                            
+" nnoremap <down> <nop>                                                          
+" nnoremap <left> <nop>                                                          
+" nnoremap <right> <nop>                                                         

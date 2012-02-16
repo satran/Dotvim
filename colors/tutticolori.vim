@@ -11,7 +11,7 @@ if exists("syntax_on")
 endif
 
 set cursorline
-hi CursorLine guibg=#cccccc
+hi CursorLine guibg=#cccccc gui=underline
 
 let g:colors_name = "tutticolori"
 
