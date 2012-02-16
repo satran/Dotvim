@@ -39,24 +39,24 @@ Clone all the sub-modules:
 
 The leader is set to ,   
 
-| Mapping           |  Description                                   |  
-|:------------------|:-----------------------------------------------|  
-| CTRL+n            |  toggles NERDTree Explorer                     |  
-| <leader>p         |  opens Google Chrome in Mac                    |  
-| <leader>md        |  opens Mou in Mac                              |  
-| CDM+i             |  opens iTerm                                   |  
-| <leader>nn        |  next buffer                                   |  
-| <leader>nb        |  previous buffer                               |  
-| <leader>g         |  Toggles Gundo                                 |  
-| <leader>j         |  Jump to definition using Rope                 |  
-| CTRL+j            |  Jump to definition using Rope                 |  
-| F4                |  Tlist toggle                                  |  
-| <leader>t         |  toggles CommandT plugin                       |  
-| CMD+t             |  toggles CommandT plugin                       |   
-| CMD+/             |  comments line                                 |  
-| ;;                |  Esc                                           |  
-| <leader>x         |  closes current window                         |  
-| CTRL+d            |  inserts python pdb.set_trace() in the code    |  
+    | Mapping           |  Description                                   |  
+    |:------------------|:-----------------------------------------------|  
+    | CTRL+n            |  toggles NERDTree Explorer                     |  
+    | <leader>p         |  opens Google Chrome in Mac                    |  
+    | <leader>md        |  opens Mou in Mac                              |  
+    | CDM+i             |  opens iTerm                                   |  
+    | <leader>nn        |  next buffer                                   |  
+    | <leader>nb        |  previous buffer                               |  
+    | <leader>g         |  Toggles Gundo                                 |  
+    | <leader>j         |  Jump to definition using Rope                 |  
+    | CTRL+j            |  Jump to definition using Rope                 |  
+    | F4                |  Tlist toggle                                  |  
+    | <leader>t         |  toggles CommandT plugin                       |  
+    | CMD+t             |  toggles CommandT plugin                       |   
+    | CMD+/             |  comments line                                 |  
+    | ;;                |  Esc                                           |  
+    | <leader>x         |  closes current window                         |  
+    | CTRL+d            |  inserts python pdb.set_trace() in the code    |  
 
 *
 :For some reason GitHub does not recognize tables using markdown. So if you can't read this just open the md in vim.*
