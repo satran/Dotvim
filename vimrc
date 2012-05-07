@@ -14,7 +14,8 @@ syntax on
 filetype on
 filetype plugin indent on
 set pastetoggle=<F3>			"turn off auto-indent when pasting text
-colo rdark-terminal    " Set color for Vim, GUI has a seperate option
+" colo rdark-terminal    " Set color for Vim, GUI has a seperate option
+colo Tomorrow-Night
 set nolist  		" Disable list chars
 set showcmd
 set mouse=a    " Set use of mouse when using the terminal
@@ -71,9 +72,10 @@ if has("gui_running")
     set guioptions-=L
     set guioptions+=a
     set gfn=Meslo\ LG\ L:h12
-    " set gfn=Espresso\ Mono\ Regular:h13
-    colo tutticolori
-    " colo rdark
+    " set gfn=Espresso\ Mono\ Regular:h12
+    " colo tutticolori
+    " colo Tomorrow
+    colo rdark
     set listchars=tab:▸\ ,eol:¬         " Invisibles using the Textmate style
 endif
 
@@ -224,3 +226,4 @@ let g:pymode_breakpoint_key = 0
 " nnoremap <down> <nop>                                                          
 " nnoremap <left> <nop>                                                          
 " nnoremap <right> <nop>                                                         
+"

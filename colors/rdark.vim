@@ -49,7 +49,6 @@ hi MoreMsg guifg=#729fcf
 hi Question guifg=#8ae234 gui=none
 hi WildMenu guifg=#eeeeec guibg=#0e1416
 hi LineNr guifg=#999999 guibg=NONE
-hi SignColumn guibg=#1e2426
 
 " Pmenu
 hi Pmenu guibg=#2e3436 guifg=#eeeeec
@@ -190,3 +189,7 @@ hi MBEVisibleChanged guifg=#fcaf3e
 hi treeOpenable guifg=#afafaf
 hi treeFile guifg=#afafaf
 hi treeExecFile guifg=#afafaf
+" Python Errors
+hi PythonError gui=UNDERLINE
+hi SignColumn guibg=#202020
+

@@ -31,12 +31,6 @@
 [submodule "bundle/simple-pairs"]
 	path = bundle/simple-pairs
 	url = https://github.com/vim-scripts/simple-pairs.git
-[submodule "bundle/tcomment_vim"]
-	path = bundle/tcomment_vim
-	url = https://github.com/tomtom/tcomment_vim.git
-[submodule "bundle/minibufexpl.vim"]
-	path = bundle/minibufexpl.vim
-	url = https://github.com/fholgado/minibufexpl.vim.git
 [submodule "bundle/vim-powerline"]
 	path = bundle/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline.git
@@ -46,3 +40,6 @@
 [submodule "bundle/rope-vim"]
 	path = bundle/rope-vim
 	url = https://github.com/klen/rope-vim.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
