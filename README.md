@@ -45,7 +45,7 @@ The leader is set to ,
 
     | Mapping           |  Description                                   |  
     |:------------------|:-----------------------------------------------|  
-    | CTRL+n            |  toggles NERDTree Explorer                     |  
+    | <leader>n         |  toggles NERDTree Explorer                     |  
     | <leader>p         |  opens Google Chrome in Mac                    |  
     | <leader>md        |  opens Mou in Mac                              |  
     | CDM+i             |  opens iTerm                                   |  
