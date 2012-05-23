@@ -6,6 +6,7 @@ set nocompatible 		" Don't be compatible with vi
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 filetype off
 call pathogen#infect()
+Helptags
 
 " ==================================================================================
 " Basic Settings
@@ -74,8 +75,8 @@ if has("gui_running")
     set gfn=Meslo\ LG\ L:h12
     " set gfn=Espresso\ Mono\ Regular:h12
     " colo tutticolori
-    " colo Tomorrow
-    colo rdark
+    colo Tomorrow
+    "colo rdark
     set listchars=tab:▸\ ,eol:¬         " Invisibles using the Textmate style
 endif
 
@@ -104,13 +105,18 @@ let g:pep8_map='<leader>8'
 
 let mapleader = ","
 
+" Map for opening the vimrc file
+noremap <leader>v <Esc>:e ~/.vimrc<CR>
+
+" Adding === to line below
+nnoremap <leader>1 yypVr=
 
 " Changes % to tab for matching brackets
 nnoremap <tab> %
 vnoremap <tab> %
 
 " Map for NERDtree toggle
-map <C-n> :NERDTreeToggle<CR>   
+map <leader>n :NERDTreeToggle<CR>   
 
 " Takes you to the next line. Similar to Command-Enter in Textmate. The
 " Command-Shift-Enter is used while creating classes and functions.
@@ -147,7 +153,7 @@ map <Leader>md :!open -a Mou %<CR><CR>
 
 " Open current folder in terminal/iterm only for Mac.
 map <D-i> :!open -a /Applications/iTerm.app '.' <CR><CR>
-map <c-i> :!open -a /Applications/iTerm.app '.' <CR><CR>
+"map <c-i> :!open -a /Applications/iTerm.app '.' <CR><CR>
 
 " Maps for next/previous buffer
 nmap <leader>nn <Esc>:bn<CR>
