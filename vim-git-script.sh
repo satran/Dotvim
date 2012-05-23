@@ -13,6 +13,7 @@ git submodule add https://github.com/Lokaltog/vim-powerline.git bundle/vim-power
 git submodule add https://github.com/plasticboy/vim-markdown.git bundle/vim-markdown
 git submodule add https://github.com/klen/rope-vim.git bundle/rope-vim
 git submodule add https://github.com/scrooloose/nerdcommenter.git bundle/nerdcommenter
+git submodule add https://github.com/vim-scripts/scratch.vim.git bundle/scratch.vim
 git submodule init
 git submodule update
 git submodule foreach git submodule init
