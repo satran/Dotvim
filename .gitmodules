@@ -55,3 +55,6 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "bundle/greplace.vim"]
+	path = bundle/greplace.vim
+	url = https://github.com/vim-scripts/greplace.vim.git
