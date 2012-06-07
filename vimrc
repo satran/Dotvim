@@ -209,6 +209,13 @@ map <C-d> <Esc>o# DEBUGGER!<CR>import pdb; pdb.set_trace()<Esc>
 " Map to close the python error screen
 map <C-q> <Esc><C>wj:clos<CR>
 
+" Syntastic
+map <leader>ee <Esc>:SyntasticToggleMode<CR>
+map <leader>ec <Esc>:SyntasticCheck<CR>
+
+" Map for grep under word
+map <leader>* "zyw:exec "grep -r ".@z." *"<CR>
+
 " ==================================================================================
 " Auto Commands
 " ==================================================================================
