@@ -216,6 +216,9 @@ map <leader>ec <Esc>:SyntasticCheck<CR>
 " Map for grep under word
 map <leader>* "zyw:exec "grep -r ".@z." *"<CR>
 
+" Map for ColorToggle
+map <F2> <Esc>:ColorToggle<CR>
+
 " ==================================================================================
 " Auto Commands
 " ==================================================================================
@@ -239,4 +242,3 @@ let g:pymode_breakpoint_key = 0
 " nnoremap <down> <nop>                                                          
 " nnoremap <left> <nop>                                                          
 " nnoremap <right> <nop>                                                         
-"

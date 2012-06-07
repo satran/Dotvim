@@ -58,3 +58,6 @@
 [submodule "bundle/greplace.vim"]
 	path = bundle/greplace.vim
 	url = https://github.com/vim-scripts/greplace.vim.git
+[submodule "bundle/color_highlight"]
+	path = bundle/color_highlight
+	url = https://github.com/chrisbra/color_highlight.git
