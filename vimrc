@@ -16,7 +16,7 @@ filetype on
 filetype plugin indent on
 set pastetoggle=<F3>			"turn off auto-indent when pasting text
 " colo rdark-terminal    " Set color for Vim, GUI has a seperate option
-colo Tomorrow-Night
+colo Tomorrow
 set nolist  		" Disable list chars
 set showcmd
 set mouse=a    " Set use of mouse when using the terminal
