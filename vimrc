@@ -15,8 +15,7 @@ syntax on
 filetype on
 filetype plugin indent on
 set pastetoggle=<F3>			"turn off auto-indent when pasting text
-" colo rdark-terminal    " Set color for Vim, GUI has a seperate option
-colo Tomorrow
+colorscheme Tomorrow
 set nolist  		" Disable list chars
 set showcmd
 set mouse=a    " Set use of mouse when using the terminal
@@ -24,6 +23,9 @@ set wrap    " Wrapping without line break and in words instead of letters
 set formatoptions+=l
 set lbr
 set encoding=utf-8
+
+" Setting global clipboard
+set clipboard+=unnamed
 
 " Folding using indents
 "set foldenable
@@ -75,26 +77,39 @@ if has("gui_running")
     set gfn=Meslo\ LG\ L:h12
     " set gfn=Espresso\ Mono\ Regular:h12
     " colo tutticolori
-    colo Tomorrow
     "colo rdark
     set listchars=tab:▸\ ,eol:¬         " Invisibles using the Textmate style
+    set shell=bash
 endif
+colo Tomorrow-Night
 
 " Status Line mode
 set laststatus=2
 
 
+" Setting the clipboard to the global clipboard
+set clipboard+=unnamed
 
 " Hide .pyc in File browser and NERDTree
 let g:explHideFiles='^\.,.*.pyc$'
 let NERDTreeIgnore=['\.pyc$', '\~$', 'PYSMELLTAG']
+
+" Hiding hidden files in Ctrl-p plugin
+let g:ctrlp_dotfiles = 1
+  let g:ctrlp_custom_ignore = {
+    \ 'dir':  '\.git$\|\.hg$\|\.svn$',
+    \ 'file': '\.pyc$\|\.so$\|\.dll$',
+    \ }
+
 
 "Setting for the File Browser
 let g:netrw_liststyle         = 3
 let g:netrw_list_hide         = '.*\.pyc,.DS_Store,.git,.ropeproject'
 "
 " MiniBuf Explorer settings
-let g:miniBufExplSortBy = "name"
+"let g:miniBufExplSortBy = "name"
+"let g:miniBufExplVSplit = 40
+"let g:miniBufExplUseSingleClick = 1
 
 " Pep 8 styling
 let g:pep8_map='<leader>8'
@@ -105,8 +120,11 @@ let g:pep8_map='<leader>8'
 
 let mapleader = ","
 
+" MiniBuf map
+"noremap <leader>e :TMiniBufExplorer<cr>
+"
 " Map for opening the vimrc file
-noremap <leader>v <Esc>:e ~/.vimrc<CR>
+noremap <leader>v <Esc>:e $MYVIMRC<CR>
 
 " Adding === to line below
 nnoremap <leader>1 yypVr=
@@ -116,15 +134,15 @@ nnoremap <tab> %
 vnoremap <tab> %
 
 " Map for NERDtree toggle
-map <leader>n :NERDTreeToggle<CR>   
+noremap <leader>n :NERDTreeToggle<CR>   
 
 " Takes you to the next line. Similar to Command-Enter in Textmate. The
-" Command-Shift-Enter is used while creating classes and functions.
-imap <D-Enter> <Esc>o
-imap <D-S-Enter> <Esc>A:<CR>
+" Ctrl-Shift-Enter is used while creating classes and functions.
+inoremap <C-Enter> <Esc>o
+inoremap <C-S-Enter> <Esc>A:<CR>
 
 " Show syntax highlighting groups for word under cursor
-nmap <C-S-P> :call <SID>SynStack()<CR>
+nnoremap <C-S-l> :call <SID>SynStack()<CR>
 function! <SID>SynStack()
   if !exists("*synstack")
     return
@@ -134,11 +152,11 @@ endfunc
 
 " Map for command c for copying to clipboard, a terminal hack. For some reason
 " the terminal command c just does crazy things. I need to figure out iTerm2.
-map <leader>yy "*y
+noremap <leader>yy "*y
 
 " Apple scripts for swipe. This doesn't work with Lion. Sigh!
-nmap <SwipeLeft> gT
-nmap <SwipeRight> gt
+nnoremap <SwipeLeft> gT
+nnoremap <SwipeRight> gt
 imap <SwipeUp> <Esc>:bN<CR>
 imap <SwipeDown> <Esc>:bn<CR>
 map <SwipeUp> :bN<CR>
@@ -156,15 +174,15 @@ map <D-i> :!open -a /Applications/iTerm.app '.' <CR><CR>
 "map <c-i> :!open -a /Applications/iTerm.app '.' <CR><CR>
 
 " Maps for next/previous buffer
-nmap <leader>nn <Esc>:bn<CR>
-nmap <leader>nb <Esc>:bp<CR>
+nnoremap <leader>nn <Esc>:bn<CR>
+nnoremap <leader>nb <Esc>:bp<CR>
 
 " Gundo plugin
 nnoremap <leader>g :GundoToggle<CR>
 
 " Showing Invisibles
 " Shortcut to rapidly toggle `set list`
-nmap <leader>l :set list<CR>
+nnoremap <leader>l :set list<CR>
 
 "Rope settings
 " Jump to the definition of whatever the cursor is on
@@ -172,7 +190,10 @@ map <leader>j :RopeGotoDefinition<CR>
 map <C-g> <Esc>:RopeGotoDefinition<CR>
 
 " Command-t
-map <leader>t :CommandT<CR>
+map <leader>t :CtrlP<CR>
+
+" Command-b
+map <leader>b :CtrlPBuffer<CR>
 
 " Command-/
 map <D-/> <Esc>gcc<CR>
@@ -192,7 +213,11 @@ nnoremap <F4> :TlistToggle<CR>
 nnoremap <D-w> <Esc>:bd<CR>
 
 " Map right command key to Esc
-imap ;; <Esc>
+inoremap ;; <Esc>
+"inoremap <Esc> <nop>
+"
+" Moving forward in insert mode like Emacs
+inoremap <C-f> <Esc>la
 
 " Clear end spaces
 map <leader>c <Esc>:%s/\s\+$//g<CR>
@@ -219,26 +244,33 @@ map <leader>* "zyw:exec "grep -r ".@z." *"<CR>
 " Map for ColorToggle
 map <F2> <Esc>:ColorToggle<CR>
 
+" Map to set columns to 90
+map <leader>9 <Esc>:set columns=100<CR>
+
+" Disabling the arrow keys.
+nnoremap <up> <nop>                                                            
+nnoremap <down> <nop>                                                          
+nnoremap <left> <nop>                                                          
+nnoremap <right> <nop>   
+
+" Making titles for markdown
+nnoremap <leader>= <Esc>^yyp^vg_r=<CR>
+nnoremap <leader>- <Esc>^yyp^vg_r-<CR>
+
 " ==================================================================================
 " Auto Commands
 " ==================================================================================
 
 " Source the vimrc file after saving it
-autocmd bufwritepost .vimrc source ~/.vimrc
+augroup vimrc
+    autocmd!
+    autocmd bufwritepost .vimrc source $MYVIMRC
+augroup END
 
+" ==================================================================================
+" Abbreviations Commands
+" ==================================================================================
 
-" Python mode settings
-" let g:pymode_syntax_builtin_objs = 0
-" let g:pymode_syntax_builtin_funcs = 0
-" let g:pymode_lint_cwindow = 0
-let g:pymode_lint_signs = 0
-let g:pymode_lint_jump = 0
-let g:pymode_syntax = 1
-let g:pymode_syntax_space_errors = 0 
-let g:pymode_breakpoint_key = 0
-
-" Disabling the arrow keys.
-" nnoremap <up> <nop>                                                            
-" nnoremap <down> <nop>                                                          
-" nnoremap <left> <nop>                                                          
-" nnoremap <right> <nop>                                                         
+iabbrev @@ satyajit.ranjeev@gmail.com
+iabbrev ccopy Copyright 2012 Satyajit Ranjeev, all rights reserved.
+iabbrev lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
